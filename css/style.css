@@ -14,37 +14,8 @@ h3{
 }
     
 /* チャレンジ 3-1 ローディングアニメーションをつけよう */
-.loaderWrapper{
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    display: flex;
-    vertical-align: middle;
-    justify-content: center;
-}
 
-.loader {
-    position: absolute;
-    top: 40%;
-}
 /* チャレンジ 2-1 背景を動画に変えてみよう */ 
-
-#bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url("../images/section-background/top.jpg") no-repeat;
-    background-size: cover;
-}
 
 /* ここからヘッダー */
 header {
@@ -75,9 +46,7 @@ header nav ul li {
 }
 
 /* チャレンジ 1-1 cssホバーアニメーションをつけよう */
-header nav ul li:hover{
-    font-size: 130%;
-}
+
 
 .cursor:hover {
     cursor: pointer;
@@ -112,8 +81,9 @@ section {
 /* 1枚目のページ */
 
 /* 1-5　background-imageを使って背景に画像を入れよう */
-
-
+section.first-page{
+    background-image: url(..//images/section-background/top.jpg);
+}
 
 section.first-page > h1 {
     width: 100%;
@@ -137,7 +107,6 @@ section.second-page {
 }
 
 section.second-page div.second-contents {
-    /* width: 100vw; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
@@ -196,9 +165,10 @@ section.second-page div.second-contents p {
 /* 3枚目のページ */
 
 /* 3-1　background-imageを使って背景に画像を入れよう */
-section.third-page {
+section.third-page{
     background-image: url("../images/section-background/menu.jpg");
 }
+
 section.third-page div.third-contensts {
     display: flex;
     justify-content: flex-end;
@@ -243,9 +213,8 @@ ul.price-flex ul.ul01 li{
     background-color: #ffeaea;
 }
 ul.price-flex ul.ul01 li.li01{
-    background-color: #0f0e0e00;  
+    background-color: #ffffff00;  
 }
-
 
 .kind2{
     padding-top: 100px;
@@ -267,7 +236,6 @@ section.forth-page div.forth-contents {
     grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
     grid-auto-rows: 1fr;
     grid-gap: 2.8em;
-    /* width: 100vw; */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -345,8 +313,7 @@ section.fifth-page div.fifth-contents div.col img{
     height: auto;
     display: block;
     margin-top: 15px;
-}
-
+} 
 
 /*　修正　*/
 section {
@@ -363,13 +330,9 @@ section {
 section.third-page div.third-contensts {
     margin-top: 40px;
     width: 100%;
-    
-
 }
 section.third-page {
     display: block;
-    
-    
 }
 
 section.forth-page div.forth-contents {
